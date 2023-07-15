@@ -1,4 +1,4 @@
-package com.lee.note;
+package com.lee.note.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,9 +10,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  */
 @SpringBootApplication
 @EnableConfigServer
-public class Application {
+public class ConfigServerApplication {
 
     public static void main(String[] arguments) {
-        SpringApplication.run(Application.class, arguments);
+        SpringApplication.run(ConfigServerApplication.class, arguments);
     }
 }
