@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-  <groupId>com.lee.note</groupId>
-  <artifactId>config-server</artifactId>
-  <version>1.0-SNAPSHOT</version>
-
-  <name>config-server</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
-
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -21,9 +11,14 @@
     <relativePath />
   </parent>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+  <groupId>com.lee.note</groupId>
+  <artifactId>foundation-lib</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+
+  <name>fondation-lib</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
 
   <dependencies>
     <dependency>
@@ -33,18 +28,23 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-config-server</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.lee.note</groupId>
-      <artifactId>foundation-lib</artifactId>
-      <version>${fondation-lib.version}</version>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-config</artifactId>
     </dependency>
   </dependencies>
-  
+
+
+
 </project>
