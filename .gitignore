@@ -31,3 +31,9 @@ target/
 
 #ignore vscode setting
 .vscode/
+
+#macos
+.DS_Store
+
+#jenv
+.java-version
